@@ -1,12 +1,3 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name — Resume</title>
-</head>
-<body>
-  <h1>Hello, I’m Your Name</h1>
-  <p>This is my resume website hosted with GitHub Pages.</p>
-</body>
-</html>
+<html><head><meta charset="utf-8"><title>It works</title></head>
+<body><h1>GitHub Pages is live</h1></body></html>
