@@ -4,7 +4,7 @@ Personal portfolio website for Robert Phillips, hosted at `hire-robert-phillips.
 
 ## Overview
 
-This is a simple static site that highlights Robert's background, resume, contact information, and selected projects.
+This is a simple static site that highlights my background, resume, contact information, and selected projects.
 
 ## Files
 
