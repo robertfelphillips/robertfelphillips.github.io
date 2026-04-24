@@ -45,6 +45,7 @@
       }
 
       .hero {
+        position: relative;
         padding: 4rem clamp(1.5rem, 4vw, 4rem);
         background:
           linear-gradient(135deg, rgba(120, 47, 64, 0.98), rgba(92, 31, 47, 0.98)),
@@ -52,29 +53,16 @@
         color: #fff9f0;
       }
 
-      .hero-grid {
-        display: grid;
-        grid-template-columns: 1.4fr 0.85fr;
-        align-items: start;
-        gap: 2rem;
-      }
-
-      .hero-copy {
-        min-width: 0;
-      }
-
-      .hero-photo {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-      }
-
-      .hero-photo .headshot {
-        margin-top: 0.35rem;
+      .hero-headshot {
+        position: absolute;
+        top: 2rem;
+        right: clamp(1rem, 4vw, 2rem);
+        width: min(220px, 28%);
+        max-width: 240px;
       }
 
       .headshot {
-        width: min(240px, 100%);
+        width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
@@ -334,33 +322,28 @@
   <body>
     <main class="shell">
       <section class="hero">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1>Hi, I'm Robert Phillips.</h1>
-            <p class="subtitle">
-              Senior Computer Science student at Florida State University focused on cybersecurity, digital
-              forensics, and systems. Building practical experience through hands-on projects and real-world problem
-              solving.
-            </p>
-            <div class="proof">C++, Python, Linux systems, and practical cybersecurity tooling.</div>
-            <div class="actions">
-              <a class="btn btn-primary" href="Robert-Phillips-Resume.pdf" target="_blank" rel="noreferrer">
-                Resume
-              </a>
-              <a
-                class="btn btn-secondary"
-                href="https://www.linkedin.com/in/robert-phillips-59b705252/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Connect on LinkedIn
-              </a>
-            </div>
-          </div>
-
-          <div class="hero-photo">
-            <img src="headshot.jpg" alt="Robert Phillips headshot" class="headshot" />
-          </div>
+        <h1>Hi, I'm Robert Phillips.</h1>
+        <p class="subtitle">
+          Senior Computer Science student at Florida State University focused on cybersecurity, digital
+          forensics, and systems. Building practical experience through hands-on projects and real-world problem
+          solving.
+        </p>
+        <div class="proof">C++, Python, Linux systems, and practical cybersecurity tooling.</div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Robert-Phillips-Resume.pdf" target="_blank" rel="noreferrer">
+            Resume
+          </a>
+          <a
+            class="btn btn-secondary"
+            href="https://www.linkedin.com/in/robert-phillips-59b705252/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+        <div class="hero-headshot">
+          <img src="headshot.jpg" alt="Robert Phillips headshot" class="headshot" />
         </div>
       </section>
 
