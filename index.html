@@ -55,7 +55,7 @@
       .hero-grid {
         display: grid;
         grid-template-columns: 1.4fr 0.85fr;
-        align-items: center;
+        align-items: start;
         gap: 2rem;
       }
 
@@ -65,7 +65,12 @@
 
       .hero-photo {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      .hero-photo .headshot {
+        margin-top: 0.35rem;
       }
 
       .headshot {
